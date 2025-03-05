@@ -1,5 +1,7 @@
 DATABASE_URL:=postgres://postgres:foobarbaz@localhost:5432/postgres
 
+// .PHONY allows make run-postgres work in teminal. this is an example of Makefile syntax
+
 .PHONY: run-postgres
 run-postgres:
 	@echo Starting postgres container
